@@ -4,11 +4,11 @@
  *
  * Manage Post actions: post, edit, delete, etc.
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** projectpilot Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 $parent_file  = 'edit.php';
