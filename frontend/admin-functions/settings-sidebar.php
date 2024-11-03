@@ -20,7 +20,7 @@
         <?php _e( 'Tour Administrator & Web Developer', 'wproject' ); ?><br />
         <a href="https://www.perthobservatory.com.au/" rel="noopener" target="_blank"><?php _e( 'Perth Observatory', 'wproject' ); ?></a></p>
         <div class="get-it">
-            <p><strong><?php _e( 'Take control how your WordPress content is viewed when shared on social media.', 'wproject' ); ?></strong></p>
+            <p><strong><?php _e( 'Take control how your projectpilot content is viewed when shared on social media.', 'wproject' ); ?></strong></p>
             <p>
                 <a href="https://rocketapps.com.au/open-graphite-pro/?origin=wproject" target="_blank" rel="noopener" class="button upgrade-cta"><?php _e( 'Buy Open Graphite Pro', 'wproject' ); ?></a> 
             </p>

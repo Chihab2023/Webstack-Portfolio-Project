@@ -20,7 +20,7 @@ function wproject_add_color_picker( $hook ) {
         // Add the color picker css file       
         wp_enqueue_style( 'wp-color-picker' ); 
          
-        // Include our custom jQuery file with WordPress Color Picker dependency
+        // Include our custom jQuery file with projectpilot Color Picker dependency
         wp_enqueue_script( 'color-script-handle', get_template_directory_uri() . '/js/min/color-script.min.js', array( 'wp-color-picker' ), false, true ); 
     }
 }
@@ -819,7 +819,7 @@ function wproject_settings_page() { ?>
 					<div class="fleft">
 						<p>
 							<?php _e( 'Project managers admin access', 'wproject' ); ?>
-							<span><?php _e( 'Allow project managers access to the WordPress admin area. They will be able to manage users and wProject settings, but can not manage plugins.', 'wproject' ); ?></span>
+							<span><?php _e( 'Allow project managers access to the projectpilot admin area. They will be able to manage users and wProject settings, but can not manage plugins.', 'wproject' ); ?></span>
 						</p>
 					</div>
 
@@ -2214,7 +2214,7 @@ function wproject_admin_setup() {
 	if(!$exists) {
 
 		/* Set up custom post type for tasks
-		https://codex.wordpress.org/Function_Reference/register_post_type */
+		https://codex.projectpilot.org/Function_Reference/register_post_type */
 		function create_tasks_post_type() {
 
 			$plugin_directory = plugins_url('images/', __FILE__ );
