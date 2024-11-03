@@ -2,7 +2,7 @@
 /**
  * Core User Role & Capabilities API
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Users
  */
 
@@ -990,7 +990,7 @@ function user_can( $user, $capability, ...$args ) {
  *
  * @since 4.3.0
  *
- * @global WP_Roles $wp_roles WordPress role management object.
+ * @global WP_Roles $wp_roles projectpilot role management object.
  *
  * @return WP_Roles WP_Roles global instance if not already instantiated.
  */
