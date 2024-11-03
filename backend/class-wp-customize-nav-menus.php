@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Nav Menus classes
+ * projectpilot Customize Nav Menus classes
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Customize
  * @since 4.3.0
  */

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Section classes
+ * projectpilot Customize Section classes
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Customize
  * @since 3.4.0
  */
