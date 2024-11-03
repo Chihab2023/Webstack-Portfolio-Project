@@ -4,7 +4,7 @@
  *
  * @since 5.0.0
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Administration
  */
 
