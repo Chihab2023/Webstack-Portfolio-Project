@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress List utility class
+ * projectpilot List utility class
  *
- * @package WordPress
+ * @package projectpilot
  * @since 4.7.0
  */
 

@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress GD Image Editor
+ * projectpilot GD Image Editor
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Image_Editor
  */
 
 /**
- * WordPress Image Editor Class for Image Manipulation through GD
+ * projectpilot Image Editor Class for Image Manipulation through GD
  *
  * @since 3.5.0
  *

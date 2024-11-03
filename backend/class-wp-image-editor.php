@@ -1,8 +1,8 @@
 <?php
 /**
- * Base WordPress Image Editor
+ * Base projectpilot Image Editor
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Image_Editor
  */
 
