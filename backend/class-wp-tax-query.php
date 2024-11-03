@@ -2,7 +2,7 @@
 /**
  * Taxonomy API: WP_Tax_Query class
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Taxonomy
  * @since 4.4.0
  */
@@ -370,7 +370,7 @@ class WP_Tax_Query {
 	 *
 	 * @since 4.1.0
 	 *
-	 * @global wpdb $wpdb The WordPress database abstraction object.
+	 * @global wpdb $wpdb The projectpilot database abstraction object.
 	 *
 	 * @param array $clause       Query clause (passed by reference).
 	 * @param array $parent_query Parent query array.

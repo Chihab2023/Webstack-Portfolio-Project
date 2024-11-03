@@ -2,7 +2,7 @@
 /**
  * User API: WP_Role class
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Users
  * @since 4.4.0
  */

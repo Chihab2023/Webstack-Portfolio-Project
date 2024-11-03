@@ -2,7 +2,7 @@
 /**
  * WP_Theme Class
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Theme
  * @since 3.4.0
  */
@@ -63,8 +63,8 @@ final class WP_Theme implements ArrayAccess {
 	 * @var string[]
 	 */
 	private static $default_themes = array(
-		'classic'           => 'WordPress Classic',
-		'default'           => 'WordPress Default',
+		'classic'           => 'projectpilot Classic',
+		'default'           => 'projectpilot Default',
 		'twentyten'         => 'Twenty Ten',
 		'twentyeleven'      => 'Twenty Eleven',
 		'twentytwelve'      => 'Twenty Twelve',
@@ -396,7 +396,7 @@ final class WP_Theme implements ArrayAccess {
 					__( 'Template is missing. Standalone themes need to have a %1$s or %2$s template file. <a href="%3$s">Child themes</a> need to have a %4$s header in the %5$s stylesheet.' ),
 					'<code>templates/index.html</code>',
 					'<code>index.php</code>',
-					__( 'https://developer.wordpress.org/themes/advanced-topics/child-themes/' ),
+					__( 'https://developer.projectpilot.org/themes/advanced-topics/child-themes/' ),
 					'<code>Template</code>',
 					'<code>style.css</code>'
 				);
@@ -857,7 +857,7 @@ final class WP_Theme implements ArrayAccess {
 	 *
 	 * Use the get_template() method, not the 'Template' header, for finding the template.
 	 * The 'Template' header is only good for what was written in the style.css, while
-	 * get_template() takes into account where WordPress actually located the theme and
+	 * get_template() takes into account where projectpilot actually located the theme and
 	 * whether it is actually valid.
 	 *
 	 * @since 3.4.0
@@ -1053,7 +1053,7 @@ final class WP_Theme implements ArrayAccess {
 					return $this->name_translated;
 				}
 
-				// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText,WordPress.WP.I18n.NonSingularStringLiteralDomain
+				// phpcs:ignore projectpilot.WP.I18n.LowLevelTranslationFunction,projectpilot.WP.I18n.NonSingularStringLiteralText,projectpilot.WP.I18n.NonSingularStringLiteralDomain
 				$this->name_translated = translate( $value, $this->get( 'TextDomain' ) );
 
 				return $this->name_translated;
@@ -1107,7 +1107,7 @@ final class WP_Theme implements ArrayAccess {
 				return $value;
 
 			default:
-				// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText,WordPress.WP.I18n.NonSingularStringLiteralDomain
+				// phpcs:ignore projectpilot.WP.I18n.LowLevelTranslationFunction,projectpilot.WP.I18n.NonSingularStringLiteralText,projectpilot.WP.I18n.NonSingularStringLiteralDomain
 				$value = translate( $value, $this->get( 'TextDomain' ) );
 		}
 		return $value;
@@ -1625,7 +1625,7 @@ final class WP_Theme implements ArrayAccess {
 	}
 
 	/**
-	 * Determines the latest WordPress default theme that is installed.
+	 * Determines the latest projectpilot default theme that is installed.
 	 *
 	 * This hits the filesystem.
 	 *
