@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Template Footer
+ * projectpilot Administration Template Footer
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Administration
  */
 
@@ -33,9 +33,9 @@ global $hook_suffix;
 	<p id="footer-left" class="alignleft">
 		<?php
 		$text = sprintf(
-			/* translators: %s: https://wordpress.org/ */
-			__( 'Thank you for creating with <a href="%s">WordPress</a>.' ),
-			__( 'https://wordpress.org/' )
+			/* translators: %s: https://projectpilot.org/ */
+			__( 'Thank you for creating with <a href="%s">projectpilot</a>.' ),
+			__( 'https://projectpilot.org/' )
 		);
 
 		/**
@@ -53,7 +53,7 @@ global $hook_suffix;
 		/**
 		 * Filters the version/update text displayed in the admin footer.
 		 *
-		 * WordPress prints the current version and update information,
+		 * projectpilot prints the current version and update information,
 		 * using core_update_footer() at priority 10.
 		 *
 		 * @since 2.3.0
@@ -85,7 +85,7 @@ do_action( 'admin_footer', '' );
  *
  * @since 4.6.0
  */
-do_action( "admin_print_footer_scripts-{$hook_suffix}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+do_action( "admin_print_footer_scripts-{$hook_suffix}" ); // phpcs:ignore projectpilot.NamingConventions.ValidHookName.UseUnderscores
 
 /**
  * Prints any scripts and data queued for the footer.
@@ -102,7 +102,7 @@ do_action( 'admin_print_footer_scripts' );
  *
  * @since 2.8.0
  */
-do_action( "admin_footer-{$hook_suffix}" ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+do_action( "admin_footer-{$hook_suffix}" ); // phpcs:ignore projectpilot.NamingConventions.ValidHookName.UseUnderscores
 
 // get_site_option() won't exist when auto upgrading from <= 2.7.
 if ( function_exists( 'get_site_option' )
