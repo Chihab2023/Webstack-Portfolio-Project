@@ -2,7 +2,7 @@
 /**
  * Fonts functions.
  *
- * @package    WordPress
+ * @package    projectpilot
  * @subpackage Fonts
  * @since      6.4.0
  */

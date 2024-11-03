@@ -2,18 +2,18 @@
 /**
  * Defines constants and global variables that can be overridden, generally in wp-config.php.
  *
- * @package WordPress
+ * @package projectpilot
  */
 
 /**
- * Defines initial WordPress constants.
+ * Defines initial projectpilot constants.
  *
  * @see wp_debug_mode()
  *
  * @since 3.0.0
  *
  * @global int    $blog_id    The current site ID.
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The projectpilot version string.
  */
 function wp_initial_constants() {
 	global $blog_id, $wp_version;
@@ -80,7 +80,7 @@ function wp_initial_constants() {
 	/*
 	 * Add define( 'WP_DEVELOPMENT_MODE', 'core' ), or define( 'WP_DEVELOPMENT_MODE', 'plugin' ), or
 	 * define( 'WP_DEVELOPMENT_MODE', 'theme' ), or define( 'WP_DEVELOPMENT_MODE', 'all' ) to wp-config.php
-	 * to signify development mode for WordPress core, a plugin, a theme, or all three types respectively.
+	 * to signify development mode for projectpilot core, a plugin, a theme, or all three types respectively.
 	 */
 	if ( ! defined( 'WP_DEVELOPMENT_MODE' ) ) {
 		define( 'WP_DEVELOPMENT_MODE', '' );
@@ -163,7 +163,7 @@ function wp_initial_constants() {
 }
 
 /**
- * Defines plugin directory WordPress constants.
+ * Defines plugin directory projectpilot constants.
  *
  * Defines must-use plugin directory constants, which may be overridden in the sunrise.php drop-in.
  *
@@ -232,7 +232,7 @@ function wp_plugin_directory_constants() {
 }
 
 /**
- * Defines cookie-related WordPress constants.
+ * Defines cookie-related projectpilot constants.
  *
  * Defines constants after multisite is loaded.
  *
@@ -257,42 +257,42 @@ function wp_cookie_constants() {
 	 * @since 2.0.0
 	 */
 	if ( ! defined( 'USER_COOKIE' ) ) {
-		define( 'USER_COOKIE', 'wordpressuser_' . COOKIEHASH );
+		define( 'USER_COOKIE', 'projectpilotuser_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.0.0
 	 */
 	if ( ! defined( 'PASS_COOKIE' ) ) {
-		define( 'PASS_COOKIE', 'wordpresspass_' . COOKIEHASH );
+		define( 'PASS_COOKIE', 'projectpilotpass_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.5.0
 	 */
 	if ( ! defined( 'AUTH_COOKIE' ) ) {
-		define( 'AUTH_COOKIE', 'wordpress_' . COOKIEHASH );
+		define( 'AUTH_COOKIE', 'projectpilot_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.6.0
 	 */
 	if ( ! defined( 'SECURE_AUTH_COOKIE' ) ) {
-		define( 'SECURE_AUTH_COOKIE', 'wordpress_sec_' . COOKIEHASH );
+		define( 'SECURE_AUTH_COOKIE', 'projectpilot_sec_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.6.0
 	 */
 	if ( ! defined( 'LOGGED_IN_COOKIE' ) ) {
-		define( 'LOGGED_IN_COOKIE', 'wordpress_logged_in_' . COOKIEHASH );
+		define( 'LOGGED_IN_COOKIE', 'projectpilot_logged_in_' . COOKIEHASH );
 	}
 
 	/**
 	 * @since 2.3.0
 	 */
 	if ( ! defined( 'TEST_COOKIE' ) ) {
-		define( 'TEST_COOKIE', 'wordpress_test_cookie' );
+		define( 'TEST_COOKIE', 'projectpilot_test_cookie' );
 	}
 
 	/**
@@ -335,12 +335,12 @@ function wp_cookie_constants() {
 		/**
 		 * @since 5.2.0
 		 */
-		define( 'RECOVERY_MODE_COOKIE', 'wordpress_rec_' . COOKIEHASH );
+		define( 'RECOVERY_MODE_COOKIE', 'projectpilot_rec_' . COOKIEHASH );
 	}
 }
 
 /**
- * Defines SSL-related WordPress constants.
+ * Defines SSL-related projectpilot constants.
  *
  * @since 3.0.0
  */
@@ -367,7 +367,7 @@ function wp_ssl_constants() {
 }
 
 /**
- * Defines functionality-related WordPress constants.
+ * Defines functionality-related projectpilot constants.
  *
  * @since 3.0.0
  */
@@ -399,7 +399,7 @@ function wp_functionality_constants() {
 }
 
 /**
- * Defines templating-related WordPress constants.
+ * Defines templating-related projectpilot constants.
  *
  * @since 3.0.0
  */
