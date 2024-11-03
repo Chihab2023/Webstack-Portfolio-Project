@@ -1,10 +1,10 @@
 <?php
 /**
- * WordPress Options Header.
+ * projectpilot Options Header.
  *
  * Displays updated message, if updated variable is part of the URL query.
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Administration
  */
 
