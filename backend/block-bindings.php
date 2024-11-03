@@ -2,9 +2,9 @@
 /**
  * Block Bindings API
  *
- * Contains functions for managing block bindings in WordPress.
+ * Contains functions for managing block bindings in projectpilot.
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Block Bindings
  * @since 6.5.0
  */
