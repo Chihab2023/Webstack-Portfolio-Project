@@ -3,7 +3,7 @@
  * Block Bindings API: WP_Block_Bindings_Source class.
  *
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Block Bindings
  * @since 6.5.0
  */
