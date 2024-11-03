@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Setting classes
+ * projectpilot Customize Setting classes
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -15,7 +15,7 @@
  * @since 3.4.0
  *
  * @see WP_Customize_Manager
- * @link https://developer.wordpress.org/themes/customize-api
+ * @link https://developer.projectpilot.org/themes/customize-api
  */
 #[AllowDynamicProperties]
 class WP_Customize_Setting {
