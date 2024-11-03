@@ -2,7 +2,7 @@
 /**
  * Register the block patterns and block patterns categories
  *
- * @package WordPress
+ * @package projectpilot
  * @since 5.5.0
  */
 
@@ -198,7 +198,7 @@ function wp_normalize_remote_block_pattern( $pattern ) {
 }
 
 /**
- * Register Core's official patterns from wordpress.org/patterns.
+ * Register Core's official patterns from projectpilot.org/patterns.
  *
  * @since 5.8.0
  * @since 5.9.0 The $current_screen argument was removed.
@@ -248,7 +248,7 @@ function _load_remote_block_patterns( $deprecated = null ) {
 }
 
 /**
- * Register `Featured` (category) patterns from wordpress.org/patterns.
+ * Register `Featured` (category) patterns from projectpilot.org/patterns.
  *
  * @since 5.9.0
  * @since 6.2.0 Normalized the pattern from the API (snake_case) to the
@@ -394,10 +394,10 @@ function _register_theme_block_patterns() {
 			$pattern_data['filePath'] = $file_path;
 
 			// Translate the pattern metadata.
-			// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText,WordPress.WP.I18n.NonSingularStringLiteralDomain,WordPress.WP.I18n.LowLevelTranslationFunction
+			// phpcs:ignore projectpilot.WP.I18n.NonSingularStringLiteralText,projectpilot.WP.I18n.NonSingularStringLiteralDomain,projectpilot.WP.I18n.LowLevelTranslationFunction
 			$pattern_data['title'] = translate_with_gettext_context( $pattern_data['title'], 'Pattern title', $text_domain );
 			if ( ! empty( $pattern_data['description'] ) ) {
-				// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText,WordPress.WP.I18n.NonSingularStringLiteralDomain,WordPress.WP.I18n.LowLevelTranslationFunction
+				// phpcs:ignore projectpilot.WP.I18n.NonSingularStringLiteralText,projectpilot.WP.I18n.NonSingularStringLiteralDomain,projectpilot.WP.I18n.LowLevelTranslationFunction
 				$pattern_data['description'] = translate_with_gettext_context( $pattern_data['description'], 'Pattern description', $text_domain );
 			}
 
