@@ -2,13 +2,13 @@
 /**
  * Site Editor administration screen.
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Administration
  */
 
 global $editor_styles;
 
-/** WordPress Administration Bootstrap */
+/** projectpilot Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'edit_theme_options' ) ) {
