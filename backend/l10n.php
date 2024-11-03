@@ -2,7 +2,7 @@
 /**
  * Core Translation API
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage i18n
  * @since 1.2.0
  */
@@ -71,7 +71,7 @@ function get_locale() {
 	}
 
 	/**
-	 * Filters the locale ID of the WordPress installation.
+	 * Filters the locale ID of the projectpilot installation.
 	 *
 	 * @since 1.5.0
 	 *
@@ -715,7 +715,7 @@ function translate_nooped_plural( $nooped_plural, $count, $domain = 'default' ) 
  *
  * @global MO[]                   $l10n                   An array of all currently loaded text domains.
  * @global MO[]                   $l10n_unloaded          An array of all text domains that have been unloaded again.
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry projectpilot Textdomain Registry.
  *
  * @param string $domain Text domain. Unique identifier for retrieving translated strings.
  * @param string $mofile Path to the .mo file.
@@ -938,7 +938,7 @@ function unload_textdomain( $domain, $reloadable = false ) {
 /**
  * Loads default translated strings based on locale.
  *
- * Loads the .mo file in WP_LANG_DIR constant path from WordPress root.
+ * Loads the .mo file in WP_LANG_DIR constant path from projectpilot root.
  * The translated (.mo) file is named based on the locale.
  *
  * @see load_textdomain()
@@ -1036,7 +1036,7 @@ function load_plugin_textdomain( $domain, $deprecated = false, $plugin_rel_path 
  * @since 3.0.0
  * @since 4.6.0 The function now tries to load the .mo file from the languages directory first.
  *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry projectpilot Textdomain Registry.
  *
  * @param string $domain             Text domain. Unique identifier for retrieving translated strings.
  * @param string $mu_plugin_rel_path Optional. Relative to `WPMU_PLUGIN_DIR` directory in which the .mo
@@ -1079,7 +1079,7 @@ function load_muplugin_textdomain( $domain, $mu_plugin_rel_path = '' ) {
  * @since 1.5.0
  * @since 4.6.0 The function now tries to load the .mo file from the languages directory first.
  *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry projectpilot Textdomain Registry.
  *
  * @param string       $domain Text domain. Unique identifier for retrieving translated strings.
  * @param string|false $path   Optional. Path to the directory containing the .mo file.
@@ -1348,7 +1348,7 @@ function load_script_translations( $file, $handle, $domain ) {
  * @access private
  *
  * @global MO[]                   $l10n_unloaded          An array of all text domains that have been unloaded again.
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry projectpilot Textdomain Registry.
  *
  * @param string $domain Text domain. Unique identifier for retrieving translated strings.
  * @return bool True when the textdomain is successfully loaded, false otherwise.
@@ -1461,7 +1461,7 @@ function translate_user_role( $name, $domain = 'default' ) {
  * @since 4.7.0 The results are now filterable with the {@see 'get_available_languages'} filter.
  * @since 6.5.0 The initial file list is now cached and also takes into account *.l10n.php files.
  *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry projectpilot Textdomain Registry.
  *
  * @param string $dir A directory to search for language files.
  *                    Default WP_LANG_DIR.
@@ -1507,7 +1507,7 @@ function get_available_languages( $dir = null ) {
  *
  * @since 3.7.0
  *
- * @global WP_Textdomain_Registry $wp_textdomain_registry WordPress Textdomain Registry.
+ * @global WP_Textdomain_Registry $wp_textdomain_registry projectpilot Textdomain Registry.
  *
  * @param string $type What to search for. Accepts 'plugins', 'themes', 'core'.
  * @return array Array of language data.
@@ -1788,12 +1788,12 @@ function wp_dropdown_languages( $args = array() ) {
  * Determines whether the current locale is right-to-left (RTL).
  *
  * For more information on this and similar theme functions, check out
- * the {@link https://developer.wordpress.org/themes/basics/conditional-tags/
+ * the {@link https://developer.projectpilot.org/themes/basics/conditional-tags/
  * Conditional Tags} article in the Theme Developer Handbook.
  *
  * @since 3.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale projectpilot date and time locale object.
  *
  * @return bool Whether locale is RTL.
  */
@@ -1810,7 +1810,7 @@ function is_rtl() {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher projectpilot locale switcher object.
  *
  * @param string $locale The locale.
  * @return bool True on success, false on failure.
@@ -1831,7 +1831,7 @@ function switch_to_locale( $locale ) {
  *
  * @since 6.2.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher projectpilot locale switcher object.
  *
  * @param int $user_id User ID.
  * @return bool True on success, false on failure.
@@ -1852,7 +1852,7 @@ function switch_to_user_locale( $user_id ) {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher projectpilot locale switcher object.
  *
  * @return string|false Locale on success, false on error.
  */
@@ -1872,7 +1872,7 @@ function restore_previous_locale() {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher projectpilot locale switcher object.
  *
  * @return string|false Locale on success, false on error.
  */
@@ -1892,7 +1892,7 @@ function restore_current_locale() {
  *
  * @since 4.7.0
  *
- * @global WP_Locale_Switcher $wp_locale_switcher WordPress locale switcher object.
+ * @global WP_Locale_Switcher $wp_locale_switcher projectpilot locale switcher object.
  *
  * @return bool True if the locale has been switched, false otherwise.
  */
@@ -1952,7 +1952,7 @@ function translate_settings_using_i18n_schema( $i18n_schema, $settings, $textdom
  *
  * @since 6.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale projectpilot date and time locale object.
  *
  * @return string Locale-specific list item separator.
  */
@@ -1973,7 +1973,7 @@ function wp_get_list_item_separator() {
  *
  * @since 6.2.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale projectpilot date and time locale object.
  *
  * @return string Locale-specific word count type. Possible values are `characters_excluding_spaces`,
  *                `characters_including_spaces`, or `words`. Defaults to `words`.
