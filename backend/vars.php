@@ -1,18 +1,18 @@
 <?php
 /**
- * Creates common globals for the rest of WordPress
+ * Creates common globals for the rest of projectpilot
  *
  * Sets $pagenow global which is the filename of the current screen.
  * Checks for the browser to set which one is currently being used.
  *
- * Detects which user environment WordPress is being used on.
+ * Detects which user environment projectpilot is being used on.
  * Only attempts to check for Apache, Nginx and IIS -- three web
  * servers with known pretty permalink capability.
  *
- * Note: Though Nginx is detected, WordPress does not currently
- * generate rewrite rules for it. See https://developer.wordpress.org/advanced-administration/server/web-server/nginx/
+ * Note: Though Nginx is detected, projectpilot does not currently
+ * generate rewrite rules for it. See https://developer.projectpilot.org/advanced-administration/server/web-server/nginx/
  *
- * @package WordPress
+ * @package projectpilot
  */
 
 global $pagenow,

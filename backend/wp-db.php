@@ -1,11 +1,11 @@
 <?php
 /**
- * WordPress database access abstraction class.
+ * projectpilot database access abstraction class.
  *
  * This file is deprecated, use 'wp-includes/class-wpdb.php' instead.
  *
  * @deprecated 6.1.0
- * @package WordPress
+ * @package projectpilot
  */
 
 if ( function_exists( '_deprecated_file' ) ) {
