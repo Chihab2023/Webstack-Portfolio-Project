@@ -266,16 +266,16 @@ function user_prompt() {
 			<div class="slide" id="slide-02">
 				<img src="<?php echo get_template_directory_uri();?>/images/onboarding/backup.png" />
 				<h1><?php _e('Back up everything','wproject'); ?></h1>
-				<p><?php printf( __('Is your project data important? It is recommended you install a <a href="%1$s" target="_blank" rel="noopener">backup plugin</a> for scheduling regular file and database backups.', 'wproject'),'https://wordpress.org/plugins/search/backup/'); ?></p>
-				<a href="https://wordpress.org/plugins/search/backup/" class="button" target="_blank" rel="noopener"><?php _e('Find a backup plugin','wproject'); ?></a>
+				<p><?php printf( __('Is your project data important? It is recommended you install a <a href="%1$s" target="_blank" rel="noopener">backup plugin</a> for scheduling regular file and database backups.', 'wproject'),'https://projectpilot.org/plugins/search/backup/'); ?></p>
+				<a href="https://projectpilot.org/plugins/search/backup/" class="button" target="_blank" rel="noopener"><?php _e('Find a backup plugin','wproject'); ?></a>
 				<span><?php _e("Skip this",'wproject'); ?></span>
 			</div>
 
 			<div class="slide" id="slide-03">
 				<img src="<?php echo get_template_directory_uri();?>/images/onboarding/security.png" />
 				<h1><?php _e('Protect your data','wproject'); ?></h1>
-				<p><?php printf( __('The data you store in wProject might be considered sensitive. Install a good <a href="%1$s" target="_blank" rel="noopener">security plugin</a> for some extra peace of mind.', 'wproject'),'https://wordpress.org/plugins/search/security/'); ?></p>
-				<a href="https://wordpress.org/plugins/search/security/" class="button" target="_blank" rel="noopener"><?php _e('Find a security plugin','wproject'); ?></a>
+				<p><?php printf( __('The data you store in wProject might be considered sensitive. Install a good <a href="%1$s" target="_blank" rel="noopener">security plugin</a> for some extra peace of mind.', 'wproject'),'https://projectpilot.org/plugins/search/security/'); ?></p>
+				<a href="https://projectpilot.org/plugins/search/security/" class="button" target="_blank" rel="noopener"><?php _e('Find a security plugin','wproject'); ?></a>
 				<span><?php _e("Skip this",'wproject'); ?></span>
 			</div>
 

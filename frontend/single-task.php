@@ -972,7 +972,7 @@ if (isset($_POST['save_changes']) && check_admin_referer('change_task_owner_cont
             
             // AJAX call to save the comment
             $.ajax({
-                url: ajaxurl, // WordPress AJAX URL, make sure it's defined
+                url: ajaxurl, // projectpilot AJAX URL, make sure it's defined
                 type: 'POST',
                 data: {
                     action: 'update_subtask_comment',
