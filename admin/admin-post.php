@@ -1,14 +1,14 @@
 <?php
 /**
- * WordPress Generic Request (POST/GET) Handler
+ * projectpilot Generic Request (POST/GET) Handler
  *
  * Intended for form submission handling in themes and plugins.
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Administration
  */
 
-/** We are located in WordPress Administration Screens */
+/** We are located in projectpilot Administration Screens */
 if ( ! defined( 'WP_ADMIN' ) ) {
 	define( 'WP_ADMIN', true );
 }
