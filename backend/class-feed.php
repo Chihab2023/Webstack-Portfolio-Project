@@ -2,7 +2,7 @@
 /**
  * Feed API
  *
- * @package WordPress
+ * @package projectpilot
  * @subpackage Feed
  * @deprecated 4.7.0
  */
